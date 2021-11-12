@@ -39,7 +39,7 @@ export default function App() {
         />
         {/* <Button onClick={searchData}>Search</Button> */}
       </InputGroup>
-      <div className="d-flex justify-content-between align-items-center flex-column">
+      <div className="d-flex justify-content-around align-items-center flex-wrap">
         {dataValue
           .filter((val) => {
             if (searchValue === "") {
@@ -66,7 +66,7 @@ export default function App() {
           })}
       </div>
 
-      <button onClick={fetchData}>fetch Data</button>
+      {/* <button onClick={fetchData}>fetch Data</button> */}
     </div>
   );
 }
